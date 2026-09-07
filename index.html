@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TKU Astronomy Club:社團介紹</title>
+<link rel="icon" href="./images/11zon_cropped.png">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC",sans-serif;
+  color:#fff;background:#fafafc;line-height:1.7;overflow-x:hidden
+}
+
+body:before{
+  content:"";position:fixed;inset:0;z-index:-3;
+  background:
+    radial-gradient(circle at 50% 50%,rgba(246, 246, 248, 0.25),transparent 28%),
+    radial-gradient(circle at 80% 80%,rgba(21, 105, 189, 0.45),transparent 30%),
+    radial-gradient(circle at 20% 20%,rgba(21, 105, 189, 0.45),transparent 30%),
+     linear-gradient(180deg,#030513 0%,#080d24 50%,#030512 100%);
+}
+
+.stars,.stars:before,.stars:after{
+  position:fixed;inset:0;content:"";z-index:-2;
+  background-image:
+  url(images/M41.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.45;
+}
+
+a{text-decoration:none;color:lightgray}
+
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:10;
+  padding:16px 6%;display:flex;justify-content:space-between;align-items:center;
+  background:linear-gradient(180deg,rgba(3,5,19,.9),transparent);backdrop-filter:blur(5px)
+}
+
+.logo{letter-spacing:1px;margin-right:10px;
+    transform: translateX(-50px);
+}
+
+.logo a{color: #fff;
+    font-weight:1000;
+}
+
+nav a{font-size:.9rem;opacity:.85;margin-left:18px}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:90px 24px 50px}
+.hero-inner{max-width:800px;
+    transform: translateY(-150px);}
+
+.badge{
+  display:inline-block;padding:6px 14px;border:1px solid rgba(255,255,255,.2);
+  border-radius:999px;background:rgba(255,255,255,.06);font-size:.85rem;margin-bottom:24px
+}
+h1{font-size:clamp(3rem,8.5vw,5.5rem);line-height:1.2;letter-spacing:-.06em;margin-bottom:24px}
+
+.hero p{font-size:clamp(1rem,2.5vw,1.1rem);opacity:.78;max-width:600px;margin:auto}
+
+.fuck p{font-size:1rem;
+    transform: translateY(-267px);
+    text-align: center;
+    color: #888990;
+}
+
+.btn{display:inline-block;margin-top:34px;padding:13px 24px;border-radius:999px;
+    background:#fff;color:#070916;font-weight:800;transition:.25s
+}
+
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(255,255,255,.15)}
+
+.scroll{margin-top:70px;font-size:.8rem;opacity:.45}
+section{padding:90px 6%;max-width:1100px;margin:auto}
+
+.kicker{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;opacity:.5;margin-bottom:10px}
+
+h2{font-size:clamp(1.3rem,5vw,3rem);
+    line-height:1.15;
+    margin-bottom:28px
+}
+
+h3{font-size:clamp(1rem,1.67vw,2rem);
+    line-height:1.15;
+    margin-bottom:28px
+}
+
+.lead{font-size:.94rem;opacity:.75;max-width:650px;
+    margin-bottom: 35px;
+}
+
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
+
+.card{
+  padding:26px;border:1px solid rgba(255, 255, 255, 0.4);border-radius:22px;
+  background:rgba(255,255,255,.25);transition:.25s
+}
+.card:hover{transform:translateY(-4px);background:rgba(138, 134, 134, 0.20)}
+.icon{font-size:2rem;margin-bottom:12px}
+.card h3{font-size:1.15rem;margin-bottom:6px}
+.card p{font-size:.92rem;opacity:.80;color:#fff}
+
+.photo-grid{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:30px}
+
+.photo{
+  min-height:230px;
+  border-radius:22px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  background:
+    radial-gradient(circle at 70% 25%,rgba(255,255,255,.8) 0 1px,transparent 2px),
+    radial-gradient(circle at 30% 55%,rgba(255,255,255,.6) 0 1px,transparent 2px),
+    linear-gradient(135deg,#6c6d73,#14054f 55%,#41454b);
+  background-size:auto,auto,cover;
+}
+
+.photo img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  display:block;
+  border-radius:8px;
+}
+
+.photo span{
+  display:block;
+  margin-top:auto;
+  padding-top:15px;
+
+  font-weight:700;
+  color:#fff;
+  text-shadow:none;
+}
+.photo.big{
+  min-height:480px;
+  grid-row:span 2;
+}
+.photo.big{
+  min-height:480px;
+  grid-row:span 2;
+}
+
+.photo.big img{
+  height:380px;
+}
+.quote{
+  margin:40px 0;padding:35px 0;border-top:1px solid rgba(255,255,255,.30);
+  border-bottom:1px solid rgba(255,255,255,.30);font-size:clamp(1.5rem,4vw,2.5rem);line-height:1.4
+}
+.faq{margin-top:28px}
+details{border-bottom:1px solid rgba(255,255,255,.12);padding:18px 0}
+summary{cursor:pointer;font-weight:700}
+details p{padding:12px 0 2px;opacity:.65}
+.cta{text-align:center;padding-bottom:110px}
+.cta h2{max-width:700px;margin:0 auto}
+.cta p{opacity:.65}
+.buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:center}
+
+.ig-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+
+.ig-btn img{
+  width:22px;
+  height:22px;
+  object-fit:contain;
+}
+
+.club-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+
+.club-btn img{
+  width:22px;
+  height:22px;
+  object-fit:contain;
+}
+footer{text-align:center;padding:28px 20px;border-top:1px solid rgba(255,255,255,.08);opacity:.45;font-size:.8rem}
+@media(max-width:650px){
+  nav .links{display:none}
+  section{padding:70px 22px}
+  .cards{grid-template-columns:1fr}
+  .photo-grid{grid-template-columns:1fr}
+  .photo.big{min-height:300px;grid-row:auto}
+}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+
+<section id="page">
+<nav>
+  <div class="logo">
+    <a href="#page">淡江天文社 TKU ASTRONOMY</a>
+  </div>
+  <div class="links">
+    <a href="#about">認識我們</a>
+    <a href="#life">社團日常</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</nav>
+</section>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="badge">淡江大學天文社｜社團介紹</div>
+    <h1>あの空を、<br>次は誰とみよう</h1>
+    <p>對宇宙有點好奇，卻不知道從哪開始？<br>那就跟我們一起，把夜空慢慢看懂。</p>
+    <div class="buttons">
+    <a class="btn ig-btn" href="https://www.instagram.com/tku_astroclub/" target="_blank"><img src="images/instagram.png" alt="Instagram">Instagram</a>
+    <a class="btn club-btn" href="https://forms.gle/UPippQr44mb22JK97" target="_blank">➕加入天文社</a>
+  </div>
+  
+</header>
+
+<header class="fuck">
+    <p>往下滑看更多</p>
+</header>
+
+<section id="about">
+  <div class="kicker">01 / About us</div>
+  <h2>加入天文社，會發生什麼？</h2>
+  <p class="lead">不用先成為天文高手。從認識星座、行星開始，一起觀星、聊天文、追最新的宇宙發現，也認識一群同樣對星空好奇的人。</p>
+  <h3>社團宗旨與理念</h3>
+  <p class="lead">堅持拒絕臭GAY的加入</p>
+  <h3>活動介紹</h3>
+  <div class="cards">
+    <div class="card"><div class="icon">🔭</div><h3>觀星</h3><p>找個晴朗的晚上，把望遠鏡架起來，親眼看看課本裡的天體。</p></div>
+    <div class="card"><div class="icon">🌌</div><h3>天文科普</h3><p>黑洞、中子星、星系、宇宙演化——用輕鬆的方式一起把宇宙搞懂。</p></div>
+    <div class="card"><div class="icon">📷</div><h3>天文攝影</h3><p>想拍月亮、星軌、銀河？一起交流拍攝、器材與作品。</p></div>
+    <div class="card"><div class="icon">🚀</div><h3>天文講座</h3><p>不定期邀請教授與研究者，帶我們認識真正的天文研究。</p></div>
+    <div class="card"><div class="icon">☄️</div><h3>最新發現</h3><p>一起追蹤宇宙中的新發現，把新聞裡的天文名詞變成真正懂的東西。</p></div>
+    <div class="card"><div class="icon">🍻</div><h3>社員生活</h3><p>除了天文，也有聚餐、交流與各種社團活動。畢竟觀星也需要隊友。</p></div>
+  </div>
+<div class="quote">「不需要很懂天文，<br>只要你對宇宙有一點好奇。」</div>
+</section>
+
+<section id="life">
+  <div class="kicker">02 / Club life</div>
+  <h2>這裡不只有星星。</h2>
+  <p class="lead">我們希望你帶走的不只是幾個天文知識，而是一段會想一直回來的社團生活。</p>
+  <div class="photo-grid">
+    <div class="photo big">
+        <img src="images/DSC08384.jpg" alt="蛋捲廣場觀星">
+        <span>🔭 課後觀星｜與夜空打聲招呼</span></div>
+    <div class="photo">
+         <img src="images/M33.jpg" alt="M33">
+         <span>📸 天文攝影｜把星空留在記憶裡</span></div>
+    <div class="photo">
+         <img src="images/DSC09765.jpg" alt="天文講座課程">
+         <span>🌌 講座課程｜深度認識宇宙</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="kicker">03 / Are you one of us?</div>
+  <h2>你可能會喜歡這裡，<br>如果你曾經……</h2>
+  <div class="cards">
+    <div class="card"><h3>☑ 看到星星會忍不住拍照</h3><p>手機也可以，先拍再說。</p></div>
+    <div class="card"><h3>☑ 好奇黑洞到底是什麼</h3><p>問題比答案更適合當入社門票。</p></div>
+    <div class="card"><h3>☑ 想學會認星座</h3><p>至少下次抬頭不會只說「那顆很亮的」。</p></div>
+    <div class="card"><h3>☑ 想認識一群有共同興趣的人</h3><p>宇宙很大，找到同好比較難。</p></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="kicker">04 / FAQ</div>
+  <h2>新生最常問的問題</h2>
+  <div class="faq">
+    <details><summary>完全不懂天文，可以加入嗎？</summary><p>當然可以！我們不要求你有天文或物理背景，從基礎開始一起玩就好。</p></details>
+    <details><summary>需要自己買望遠鏡嗎？</summary><p>不用。社團活動會有相關器材。</p></details>
+    <details><summary>每次活動都一定要參加嗎？</summary><p>不用！大學課表很容易衝堂，依自己的時間參加就可以。</p></details>
+    <details><summary>社團會不會很難、很學術？</summary><p>有科普、有講座，也有觀星與社員活動。想深入研究可以深入，單純想看星星也完全沒問題。</p></details>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="kicker">05 / Join us</div>
+  <h2>沒遇到社員？<br>沒關係，宇宙不會下課。🌌</h2>
+  <p>先追蹤我們、加入新生群，之後慢慢認識這片星空。</p>
+  <div class="buttons">
+    <a class="btn ig-btn" href="https://www.instagram.com/tku_astroclub/" target="_blank"><img src="images/instagram.png" alt="Instagram">Instagram</a>
+    <a class="btn club-btn" href="https://forms.gle/UPippQr44mb22JK97" target="_blank">➕加入天文社</a>
+  </div>
+</section>
+
+<footer>© 2026 淡江天文社 TKU Astronomy Club | 本頁最後更新：2026-09-07<br>
+本網站由淡江天文社第2屆創建，第2屆幹部群維護</footer>
+</body>
+</html>
