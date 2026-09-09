@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TKU Astronomy Club:社團介紹</title>
+<title>淡江天文社 TKU Astronomy Club:社團介紹</title>
 <link rel="icon" href="images/11zon_cropped.png">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -93,11 +93,17 @@ h1{font-size:clamp(3rem,8.5vw,5.5rem);
     color: #888990;
 }
 
-.btn{display:inline-block;margin-top:34px;padding:13px 24px;border-radius:999px;
-    background:#e5f0ff;color:#070916;font-weight:800;transition:.25s
+.btn{display:inline-block;
+  margin-top:34px;
+  padding:13px 24px;
+  border-radius:999px;
+  background:#e5f0ff;
+  color:#070916;
+  font-weight:800;
+  transition:.25s;
 }
 
-.btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(255,255,255,.15)}
+.btn:hover{transform:translateY(-5px);box-shadow:0 12px 35px rgba(255,255,255,.15)}
 
 .scroll{margin-top:70px;font-size:.8rem;opacity:.45}
 
@@ -105,12 +111,12 @@ section{padding:90px 6%;max-width:1100px;margin:auto}
 
 .kicker{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;opacity:.5;margin-bottom:10px}
 
-h2{font-size:clamp(1.2rem,4vw,2.6rem);
+h2{font-size:clamp(1.9rem,5.2vw,3rem);
     line-height:1.2;
     margin-bottom:28px
 }
 
-h3{font-size:clamp(1rem,1.9vw,2rem);
+h3{font-size:clamp(1.3rem,2.2vw,2.6rem);
     line-height:1.15;
     margin-bottom:28px
 }
@@ -176,16 +182,23 @@ h3{font-size:clamp(1rem,1.9vw,2rem);
 .photo.big img{
   height:380px;
 }
+
 .quote{
-  margin:40px 0;padding:35px 0;border-top:1px solid rgba(255,255,255,.30);
-  border-bottom:1px solid rgba(255,255,255,.30);font-size:clamp(1.5rem,4vw,2.5rem);line-height:1.4
+  margin:40px 0;
+  padding:35px 0;
+  border-top:1px solid rgba(255,255,255,.30);
+  border-bottom:1px solid rgba(255,255,255,.30);
+  font-size:clamp(1.3rem,3.2vw,2.1rem);
+  line-height:1.4
 }
+
 .faq{margin-top:28px}
+
 details{border-bottom:1px solid rgba(255,255,255,.12);padding:18px 0}
 
 summary{cursor:pointer;font-weight:700}
 
-details p{padding:12px 0 2px;opacity:.65}
+details p{padding:12px 0 2px;opacity:.79}
 
 .contact{opacity: 1.0;
 }
@@ -202,7 +215,12 @@ details p{padding:12px 0 2px;opacity:.65}
 .cta h2{max-width:700px;margin:0 auto}
 .cta p{opacity:.65}
 
-.buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:center}
+.buttons{display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+  position:center
+}
 
 .ig-btn{
   display:inline-flex;
@@ -251,18 +269,26 @@ details p{padding:12px 0 2px;opacity:.65}
   height:22px;
   object-fit:contain;
 }
-footer{text-align:center;padding:28px 20px;border-top:1px solid rgba(255,255,255,.08);opacity:.45;font-size:.8rem}
+
+footer{text-align:center;
+  padding:28px 20px;
+  border-top:1px solid rgba(255,255,255,.08);
+  opacity:.45;
+  font-size:.8rem
+}
 
 @media(max-width:650px){
-  nav .links{display:none}
+  nav .links{display:flex}
   nav{justify-content:center}
   .logo{transform:none;
   text-align: center} 
+  .fuck{transform:none;}
   section{padding:70px 22px}
   .cards{grid-template-columns:1fr}
   .photo-grid{grid-template-columns:1fr}
   .photo.big{min-height:300px;grid-row:auto}
 }
+
 </style>
 </head>
 <body>
@@ -275,6 +301,7 @@ footer{text-align:center;padding:28px 20px;border-top:1px solid rgba(255,255,255
   </div>
   <div class="links">
     <a href="#about">認識我們</a>
+    <a href="#activities">活動介紹</a>
     <a href="#life">社團日常</a>
     <a href="#faq">FAQ</a>
     <a href="#contact">聯絡我們</a>
@@ -305,25 +332,28 @@ footer{text-align:center;padding:28px 20px;border-top:1px solid rgba(255,255,255
 
 <section id="about">
   <div class="kicker">01 / About us</div>
-  <h2>加入天文社，會發生什麼？</h2>
+  <h2>關於天文社，我們在做什麼？</h2>
   <p class="lead">淡江天文社 | 2026-09-06</p>
   <h3>社團宗旨與理念</h3>
-  <p class="pop">堅持拒絕臭GAY的加入(南娘除外)</p>
-  <br>
+  <p class="pop">天文同好互相切磋學習以增進彼此天文知識並加以吞廣於學校及社會群體。<br>堅持拒絕臭GAY的加入</p>
+<div class="quote">「不需要很懂天文，<br>只要你對星空有一點好奇。」</div>
+</section>
+
+<section id="activities">
+  <div class="kicker">02 / Club activities</div>
   <h3>活動介紹</h3>
   <div class="cards">
     <div class="card"><div class="icon">🔭</div><h3>觀星</h3><p>找個晴朗的晚上，把望遠鏡架起來，親眼看看課本裡的天體。</p></div>
     <div class="card"><div class="icon">🌌</div><h3>天文科普</h3><p>黑洞、中子星、星系、宇宙演化——用輕鬆的方式一起把宇宙搞懂。</p></div>
-    <div class="card"><div class="icon">📷</div><h3>天文攝影</h3><p>想拍月亮、星軌、銀河？一起交流拍攝、器材與作品。</p></div>
-    <div class="card"><div class="icon">🚀</div><h3>天文講座</h3><p>不定期邀請教授與研究者，帶我們認識真正的天文研究。</p></div>
+    <div class="card"><div class="icon">📷</div><h3>天文攝影</h3><p>想拍月球、星空、銀河？一起交流拍攝、器材與作品！</p></div>
+    <div class="card"><div class="icon">🚀</div><h3>天文講座</h3><p>不定期邀請教授與講師，帶我們認識真正的天文！</p></div>
     <div class="card"><div class="icon">☄️</div><h3>最新發現</h3><p>一起追蹤宇宙中的新發現，把新聞裡的天文名詞變成真正懂的東西。</p></div>
     <div class="card"><div class="icon">🍻</div><h3>社員生活</h3><p>除了天文，也有聚餐、交流與各種社團活動。畢竟觀星也需要隊友。</p></div>
   </div>
-<div class="quote">「不需要很懂天文，<br>只要你對宇宙有一點好奇。」</div>
 </section>
 
 <section id="life">
-  <div class="kicker">02 / Club life</div>
+  <div class="kicker">03 / Club life</div>
   <h2>這裡不只有星星。</h2>
   <p class="lead">我們希望你帶走的不只是幾個天文知識，而是一段會想一直回來的社團生活。</p>
   <div class="photo-grid">
@@ -340,7 +370,7 @@ footer{text-align:center;padding:28px 20px;border-top:1px solid rgba(255,255,255
 </section>
 
 <section>
-  <div class="kicker">03 / Are you one of us?</div>
+  <div class="kicker">04 / Are you one of us?</div>
   <h2>你可能會喜歡這裡，<br>如果你曾經……</h2>
   <div class="cards">
     <div class="card"><h3>☑ 看到星星會忍不住拍照</h3><p>手機也可以，先拍再說。</p></div>
@@ -351,20 +381,21 @@ footer{text-align:center;padding:28px 20px;border-top:1px solid rgba(255,255,255
 </section>
 
 <section id="faq">
-  <div class="kicker">04 / FAQ</div>
-  <h2>新生最常問的問題</h2>
+  <div class="kicker">05 / FAQ</div>
+  <h2>新生常見問題！</h2>
   <div class="faq">
-    <details><summary>完全不懂天文，可以加入嗎？</summary><p>當然可以！我們不要求你有天文或物理背景，從基礎開始一起玩就好。</p></details>
-    <details><summary>需要自己買望遠鏡嗎？</summary><p>不用。社團活動會有相關器材。</p></details>
-    <details><summary>每次活動都一定要參加嗎？</summary><p>不用！大學課表很容易衝堂，依自己的時間參加就可以。</p></details>
-    <details><summary>社團會不會很難、很學術？</summary><p>有科普、有講座，也有觀星與社員活動。想深入研究可以深入，單純想看星星也完全沒問題。</p></details>
-    <details><summary>這學期的參與認證怎麼拿？</summary><p>本學期還沒有參與認證！</details>
+    <details><summary>社費要多少錢？</summary><p>一個學期450，一學年800！</p></details>
+    <details><summary>完全不懂天文，可以加入嗎？</summary><p>當然可以！<br>不管你是純新手還是資深天文咖，我們都大歡迎！</p></details>
+    <details><summary>需要自己買望遠鏡嗎？</summary><p>不用！社團活動會有相關器材可以使用！<br>佛心社團🙌佛心社團🙌</p></details>
+    <details><summary>每次活動都一定要參加嗎？</summary><p>不用！只需要挑自己感興趣的課程來就好！</p></details>
+    <details><summary>社團會不會很難、很學術？</summary><p>有科普、有講座，也有觀星與社員活動。想深入研究可以深入，單純想看星星也完全沒問題！</p></details>
+    <details><summary>這學期的參與認證怎麼拿？</summary><p>非常抱歉（；´д｀）ゞ<br>本學期還沒有參與認證！</details>
   </div>
 </section>
 
 
 <section id="contact">
-  <div class="kicker">05 / Our contact information</div >
+  <div class="kicker">06 / Our contact information</div >
   <h2>聯絡資訊</h2>
   <p>追蹤我們以獲取最新消息!</p>
   <div class="buttons">
@@ -378,18 +409,15 @@ footer{text-align:center;padding:28px 20px;border-top:1px solid rgba(255,255,255
   <div class="buttons">
     <a class="btn mail-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=tkuastclub@gmail.com" target="_blank"><img src="images/Gmail_Logo_512px.png" alt="Gmail">Gmail</a>
   </div>
-  <p>淡江天文社 IG</p>
-  <div class="buttons"> 
-    <a class="btn club-btn" href="https://forms.gle/UPippQr44mb22JK97" target="_blank">➕加入天文社</a>
-  </div>
 </section>
 
 <section class="cta">
-  <div class="kicker">06 / Join us</div>
+  <div class="kicker">07 / Join us</div>
   <h2>沒遇到社員？</h2>
   <h2>沒關係，宇宙不會下課。🌌</h2>
   <br>
   <p>先追蹤我們、加入新生群，之後慢慢認識這片星空。</p>
+  <a class="btn club-btn" href="https://youtu.be/dQw4w9WgXcQ?si=IaWz2vMjy9_995py" target="_blank">🎁神祕小禮物</a>
 </section>
 
 <footer>© 淡江天文社 TKU Astronomy Club | 本頁最後更新：2026-09-09<br>
