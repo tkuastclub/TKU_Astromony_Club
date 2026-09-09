@@ -127,6 +127,42 @@ h3{font-size:clamp(1.3rem,2.2vw,2.6rem);
   margin-bottom: 35px;
 }
 
+.team {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.member {
+  padding: 11.5px 20px;
+  border-left: 2px solid #8fbaff;
+  background: rgba(255,255,255,.035);
+}
+
+.member-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.member-title span {
+  color: #8fa6cb;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.member-title strong {
+  color: #ffffffe3;
+  font-size: 17px;
+}
+
+.member p {
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 14px;
+}
+
 .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
 
 .card{
@@ -277,12 +313,13 @@ footer{text-align:center;
   font-size:.8rem
 }
 
+
 @media(max-width:650px){
-  nav .links{display:flex}
+  nav .links{display:none}
   nav{justify-content:center}
   .logo{transform:none;
   text-align: center} 
-  .fuck{transform:none;}
+  .fuck{transform:(20px);}
   section{padding:70px 22px}
   .cards{grid-template-columns:1fr}
   .photo-grid{grid-template-columns:1fr}
@@ -332,16 +369,61 @@ footer{text-align:center;
 
 <section id="about">
   <div class="kicker">01 / About us</div>
-  <h2>關於天文社，我們在做什麼？</h2>
+  <h2>關於天文社，我們是誰？</h2>
   <p class="lead">淡江天文社 | 2026-09-06</p>
   <h3>社團宗旨與理念</h3>
   <p class="pop">天文同好互相切磋學習以增進彼此天文知識並加以吞廣於學校及社會群體。<br>堅持拒絕臭GAY的加入</p>
+  <br>
+  <h3>行政團隊</h3>
+  <div class="team">
+    <div class="member">
+      <div class="member-title">
+        <span>社長</span>
+        <strong>許耕綸</strong>
+      </div>
+      <p>想說的話：一個不小心就栽進這個大坑了 (⊙_⊙;)</p>
+    </div>
+    <div class="member">
+      <div class="member-title">
+        <span>副社長</span>
+        <strong>周柏廷</strong>
+      </div>
+      <p>想說的話：我的Line頭貼是一包衛生紙(惱</p>
+    </div>
+    <div class="member">
+      <div class="member-title">
+        <span>公關長</span>
+        <strong>劉祐良</strong>
+      </div>
+      <p>想說的話：打瓦不揪</p>
+    </div>
+    <div class="member">
+      <div class="member-title">
+        <span>教學長</span>
+        <strong>黃雋恆</strong>
+      </div>
+      <p>想說的話：打瓦不揪</p>
+    </div>
+    <div class="member">
+      <div class="member-title">
+        <span>活動長</span>
+        <strong>陳韋安</strong>
+      </div>
+      <p>想說的話：打瓦不揪</p>
+    </div>
+    <div class="member">
+      <div class="member-title">
+        <span>文書長</span>
+        <strong>羅崇恩</strong>
+      </div>
+      <p>想說的話：打瓦不揪</p>
+    </div>
 <div class="quote">「不需要很懂天文，<br>只要你對星空有一點好奇。」</div>
 </section>
 
 <section id="activities">
   <div class="kicker">02 / Club activities</div>
-  <h3>活動介紹</h3>
+  <h3>本學期活動！</h3>
   <div class="cards">
     <div class="card"><div class="icon">🔭</div><h3>觀星</h3><p>找個晴朗的晚上，把望遠鏡架起來，親眼看看課本裡的天體。</p></div>
     <div class="card"><div class="icon">🌌</div><h3>天文科普</h3><p>黑洞、中子星、星系、宇宙演化——用輕鬆的方式一起把宇宙搞懂。</p></div>
