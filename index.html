@@ -309,15 +309,21 @@ footer{text-align:center;
 
 
 @media(max-width:650px){
-  nav .links{display:none}
-  nav{justify-content:center}
-  .logo{transform:none;
-  text-align: center} 
-  .fuck{transform:translateY(30px);}
-  section{padding:70px 22px}
-  .cards{grid-template-columns:1fr}
-  .photo-grid{grid-template-columns:1fr}
-  .photo.big{min-height:300px;grid-row:auto}
+nav{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;}
+nav .links{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;gap: 8px 16px;}
+.logo{transform: none;text-align: center;}
+.fuck{transform: translateX(30px)}
+section{padding: 70px 22px;}
+.cards{grid-template-columns: 1fr;}
+.photo-grid{grid-template-columns: 1fr;}
+.photo.big{min-height: 300px;grid-row: auto;}
 }
 
 </style>
@@ -366,7 +372,7 @@ footer{text-align:center;
   <h2>關於天文社，我們是誰？</h2>
   <p class="lead">淡江天文社 | 2026-09-06</p>
   <h3>社團宗旨與理念</h3>
-  <p class="pop">天文同好互相切磋學習以增進彼此天文知識並加以吞廣於學校及社會群體。<br>堅持拒絕臭GAY的加入</p>
+  <p class="pop">天文同好互相切磋學習以增進彼此天文知識並加以推廣於學校及社會群體。<br>堅持拒絕臭GAY的加入</p>
   <br>
   <h3>行政團隊</h3>
   <div class="team">
@@ -382,7 +388,7 @@ footer{text-align:center;
         <span>副社長</span>
         <strong>周柏廷</strong>
       </div>
-      <p>想說的話：我的Line頭貼是一包衛生紙(惱</p>
+      <p>想說的話：我的Line頭貼是一包衛生紙 (惱</p>
     </div>
     <div class="member">
       <div class="member-title">
