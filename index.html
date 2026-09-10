@@ -131,6 +131,10 @@ h3{font-size:clamp(1.3rem,2.2vw,2.6rem);
   margin-bottom: 35px;
 }
 
+.shit{font-size:.90rem;
+  opacity:.85;
+  max-width:650px;
+  margin-bottom: 35px;}
 .team {
   margin-top: 25px;
   display: flex;
@@ -173,17 +177,46 @@ h3{font-size:clamp(1.3rem,2.2vw,2.6rem);
   padding:26px;border:1px solid rgba(255, 255, 255, 0.4);border-radius:22px;
   background:rgba(255,255,255,.25);transition:.25s
 }
-.card:hover{transform:translateY(-4px);background:rgba(138, 134, 134, 0.20)}
-.icon{font-size:2rem;margin-bottom:12px}
-.card h3{font-size:1.15rem;margin-bottom:6px}
-.card p{font-size:.92rem;opacity:.80;color:#fff}
+
+.card:hover{transform:translateY(-4px);
+  background:rgba(138, 134, 134, 0.20)
+}
+
+.icon{font-size:2rem;
+  margin-bottom:12px}
+
+.card h3{font-size:1.15rem;
+  margin-bottom:6px}
+
+.card p{font-size:.92rem;
+  opacity:.80;
+  color:#fff}
+
+.card.featured{
+  grid-column:span 2;
+  padding:32px;
+  background:rgba(255,255,255,.30);
+}
+
+.card.featured .icon{
+  font-size:3rem;
+}
+
+.card.featured h3{
+  font-size:1.5rem;
+}
+
+.card.featured p{
+  font-size:1rem;
+  max-width:700px;
+}
 
 .photo-grid{display:grid;
   grid-template-columns:1fr 1fr;gap:30px;
   margin-top:30px}
 
 .photo{
-  min-height:250px;
+  min-height:200px;
   border-radius:22px;
   padding:20px;
   display:flex;
@@ -321,12 +354,13 @@ nav .links{
   gap: 13px;
   white-space: nowrap;
   flex-shrink: 0;
-  transform: translateX(-10px)
+  transform: translateX(-10px);
 }
 .logo{transform: none;text-align: center;}
 .fuck{transform: translateY(30px)}
 section{padding: 70px 22px;}
 .cards{grid-template-columns: 1fr;}
+.card.featured{grid-column:auto;}
 .photo-grid{grid-template-columns: 1fr;}
 .photo.big{min-height: 300px;grid-row: auto;}
 }
@@ -400,7 +434,7 @@ section{padding: 70px 22px;}
         <span>公關長</span>
         <strong>劉祐良</strong>
       </div>
-      <p>想說的話：打瓦不揪</p>
+      <p>想說的話：我是公關但不做公關🤓</p>
     </div>
     <div class="member">
       <div class="member-title">
@@ -430,6 +464,8 @@ section{padding: 70px 22px;}
   <div class="kicker">02 / Club activities</div>
   <h3>本學期活動！</h3>
   <div class="cards">
+    <div class="card featured">
+    <div class="icon"></div>‼️🌟本學期大活動<h3>星趴 Star Party</h3><p>大家每年最期待的Star Party星趴<br>🤩🥳</p></div>
     <div class="card"><div class="icon">🔭</div><h3>觀星</h3><p>找個晴朗的晚上，把望遠鏡架起來，親眼看看課本裡的天體。</p></div>
     <div class="card"><div class="icon">🌌</div><h3>天文科普</h3><p>黑洞、中子星、星系、宇宙演化——用輕鬆的方式一起把宇宙搞懂。</p></div>
     <div class="card"><div class="icon">📷</div><h3>天文攝影</h3><p>想拍月球、星空、銀河？一起交流拍攝、器材與作品！</p></div>
@@ -442,7 +478,7 @@ section{padding: 70px 22px;}
 <section id="life">
   <div class="kicker">03 / Club life</div>
   <h2>這裡不只有星星。</h2>
-  <p class="lead">我們希望你帶走的不只是幾個天文知識，而是一段會想一直回來的社團生活。</p>
+  <p class="shit">我們希望你帶走的不只是幾個天文知識，而是一段會想一直回來的社團生活。</p>
   <div class="photo-grid">
     <div class="photo">
         <img src="images/DSC08384.jpg" alt="蛋捲廣場觀星">
